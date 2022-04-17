@@ -1,0 +1,38 @@
+{
+  "name": "guyi_server",
+  "version": "1.0.0",
+  "description": "",
+  "bin": "./src/serve.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/serve.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "conf": "^10.0.3",
+    "express": "^4.17.1",
+    "opener": "^1.5.2",
+    "progress": "^2.0.3",
+    "prompts": "^2.4.2",
+    "signale": "^1.4.0",
+    "ws": "^8.2.3"
+  },
+  "pkg": {
+    "assets": [
+      "guyi/**/*"
+    ],
+    "scripts": [
+      "guyi/**/*.js",
+      "src/**/*"
+    ],
+    "targets": [
+      "linux",
+      "win"
+    ],
+    "outputPath": "dist",
+    "compress": "GZip"
+  }
+}
